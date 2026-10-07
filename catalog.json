@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "home-ai-core.official",
+  "generated_at": "2026-10-07T11:40:00Z",
+  "modules": [
+    {
+      "schema_version": 2,
+      "id": "reference.module",
+      "name": "Reference Module",
+      "description": "Reference Docker module for validating HOME AI Core module lifecycle and catalog integration.",
+      "version": "0.1.0",
+      "core": ">=0.1.166 <1.0.0",
+      "runtime": {
+        "type": "docker",
+        "docker": {
+          "image": "ghcr.io/deadsoulf/home-ai-reference-module@sha256:60177fb078509ea63e74c9776f92a1dd987e88be2cd0b146cc553ec89f987336"
+        }
+      },
+      "dependencies": [],
+      "conflicts": [],
+      "permissions": [],
+      "capabilities": {
+        "requires": [
+          "host.docker"
+        ],
+        "provides": [
+          "reference.module"
+        ]
+      },
+      "host": {
+        "architectures": [
+          "amd64",
+          "arm64"
+        ]
+      },
+      "lifecycle": [
+        "install",
+        "upgrade",
+        "remove",
+        "start",
+        "stop",
+        "restart"
+      ]
+    }
+  ]
+}
