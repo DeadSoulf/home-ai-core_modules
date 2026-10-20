@@ -2,13 +2,13 @@
   "schema_version": 2,
   "id": "nvr.module",
   "name": "NVR",
-  "description": "HOME AI Core NVR module with Hikvision HCNetSDK and RTSP recording support.",
-  "version": "1.1.4",
-  "core": ">=0.1.167 <1.0.0",
+  "description": "HOME AI Core NVR 1.1.6 with Hikvision HCNetSDK 6.1.11.40 and RTSP recording, MP4/HLS playback, snapshots and PTZ. Advanced vendor alarms, voice, diagnostics and remote archive operations are not supported in this SDK profile.",
+  "version": "1.1.6",
+  "core": ">=0.1.200 <1.0.0",
   "runtime": {
     "type": "docker",
     "docker": {
-      "image": "ghcr.io/deadsoulf/home-ai-core_dvr@sha256:e58e1aa2b73c23472244cda400aef3d6a2da55e54edeedc836b121c67e610f02"
+      "image": "ghcr.io/deadsoulf/home-ai-core_dvr@sha256:55f159af9a067168990ccf6d5e43b85a474bbfc8da6af0da9bb2b17b89c12651"
     },
     "health": {
       "port": 8090,
