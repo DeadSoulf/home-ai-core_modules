@@ -1,0 +1,7 @@
+{
+  "id": "frigate.module",
+  "name": "Frigate NVR",
+  "provider": "github-ghcr-official",
+  "repository": "blakeblackshear/frigate",
+  "image_repository": "ghcr.io/blakeblackshear/frigate"
+}

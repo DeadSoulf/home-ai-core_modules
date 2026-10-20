@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "home-ai-core.official",
-  "generated_at": "2026-10-20T07:41:39Z",
+  "generated_at": "2026-10-20T10:40:51Z",
   "modules": [
     {
       "schema_version": 2,
@@ -198,6 +198,15 @@
         "restart",
         "remove"
       ]
+    }
+  ],
+  "upstreams": [
+    {
+      "id": "frigate.module",
+      "name": "Frigate NVR",
+      "provider": "github-ghcr-official",
+      "repository": "blakeblackshear/frigate",
+      "image_repository": "ghcr.io/blakeblackshear/frigate"
     }
   ]
 }

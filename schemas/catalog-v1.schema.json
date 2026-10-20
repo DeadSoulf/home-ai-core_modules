@@ -27,6 +27,41 @@
       "items": {
         "type": "object"
       }
+    },
+    "upstreams": {
+      "type": "array",
+      "maxItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "provider",
+          "repository",
+          "image_repository"
+        ],
+        "properties": {
+          "id": {
+            "const": "frigate.module"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "provider": {
+            "const": "github-ghcr-official"
+          },
+          "repository": {
+            "const": "blakeblackshear/frigate"
+          },
+          "image_repository": {
+            "const": "ghcr.io/blakeblackshear/frigate"
+          }
+        }
+      }
     }
   }
 }

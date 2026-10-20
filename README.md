@@ -16,3 +16,7 @@
 2. Версия должна быть совместима с указанной версией HOME AI Core.
 3. В пользовательском интерфейсе отображаются только модули, присутствующие в `catalog.json`.
 4. Обновление каталога выполняется только после успешной сборки и проверки Docker-образа.
+
+## Frigate: dynamic official source
+
+`modules/frigate.module/source.json` declares the allowlisted official GitHub/GHCR source. Core >=0.1.211 expands it into a verified per-host immutable manifest; no placeholder digest is published. See `modules/frigate.module/README.md`.
